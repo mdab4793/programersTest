@@ -93,10 +93,74 @@ function solution(n, k) {
   return answer;
 }
 //5월22일
+
+//소문자로 바꾸기
+function solution(myString) {
+  var answer = myString.toLowerCase();
+  return answer;
+}
+//문자열을 정수로 변환하기
+function solution(n_str) {
+  var answer = parseInt(n_str);
+  return answer;
+}
+//정수부분
+function solution(flo) {
+  var answer = Math.floor(flo);
+  return answer;
+}
+
+//n의배수
+function solution(num, n) {
+  if (num % n === 0) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
+//공배수
+function solution(number, n, m) {
+  if (number % n === 0 && number % m === 0) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
 //flag에 따라 다른 값 반환하기
 function solution(a, b, flag) {
   if (flag == true) {
     return a + b;
   }
   if (flag == false) return a - b;
+}
+//문자열로변환
+
+function solution(n) {
+  var answer = n.toString();
+  return answer;
+}
+//대문자로바꾸기
+function solution(myString) {
+  var answer = myString.toUpperCase();
+  return answer;
+}
+//배열뒤집기
+function solution(num_list) {
+  var answer = num_list.reverse();
+
+  return answer;
+}
+//배열자르기
+function solution(numbers, num1, num2) {
+  const answer = numbers.slice(num1, num2 + 1);
+  return answer;
+}
+
+//배열의 원소의 길이
+//입출력 예 #1["We", "are", "the", "world!"]의 각 원소의 길이인 [2, 3, 3, 6]을 return합니다.
+//입출력 예 #2 ["I", "Love", "Programmers."]의 각 원소의 길이인 [1, 4, 12]을 return합니다.
+function solution(strlist) {
+  var answer = strlist.map((element) => element.length);
+  return answer;
 }
